@@ -34,15 +34,5 @@ public class RestaurantService {
     }
 
     // Part 3 (TDD): Calculate order value given item names
-    public int calculateOrderValue(String restaurantName, List<String> itemNames) {
-        Restaurant restaurant = findRestaurantByName(restaurantName);
-        int total = 0;
-        for (String itemName : itemNames) {
-            Item item = restaurant.findItemByName(itemName);
-            if (item != null) {
-                total += item.getPrice();
-            }
-        }
-        return total;
-    }
+    
 }
